@@ -1,7 +1,7 @@
 
 
 <DOCTYPE html>
-    <title>AI Choreographer: Music Conditioned 3D Dance Generation with AIST++</title>
+    <title>Overview of SegPath</title>
 
     <meta charset="utf-8">
 
@@ -119,13 +119,8 @@
         <div class="container">
             <div class="row mb-2 mt-4" id="paper-title">
                 <h1 class="col-md-12 text-center">
-                    AI Choreographer
+                    Overview of SegPath
                 </h1>
-                <h3 class="col-md-12 text-center">
-                    Music Conditioned 3D Dance Generation with AIST++
-                </h3>
-                <h3 class="col-md-12 text-center">
-                </h3>
             </div>
 
             <div class="row" id="authors">
@@ -207,20 +202,28 @@
                         </div>
                     </div>
                     <p class="text-justify">
-                        We present a crossmodal transformer-based 
-                        architecture (FACT) model and a new 3D dance dataset <a href="https://google.github.io/aist_plusplus/" target="_blank">AIST++</a>,
-                        which contains 3D motion reconstructed from real dancers paired with music 
-                        (left). 
-                        Our model generates realistic smooth dance motion in 3D with full
-                        translation, which allow applications such as automatic motion retargeting 
-                        to a novel character (right).
+                        SegPath is created for the semantic segmentation of H&E images 
+                        for eight major cell types in tumor tissue.
+                        <br>
+                        <br>
+                        The dataset is constructed by immunofluorescence restaing. 
+                        First, sections were stained with H&E. 
+                        They were then digitized using a slide scanner 
+                        to create whole slide images (WSIs). 
+                        After destaining the H&E-stained sections with alcohol and autoclave processing, 
+                        IF and 4',6-diamidino-2-phenylindole dihydrochloride (DAPI) nuclear staining 
+                        were performed using antibodies that specifically recognized each cell type. 
+                        The slides were then digitized again. 
+                        Multiresolution rigid registration between the H&E and 
+                        IF images was performed to ensure that the haematoxylin component 
+                        in the H&E images and DAPI in the IF images, both recognizing nuclei, had been aligned.
                     </p>
 
                 </div>
             </div>
             <div class="row mb-4" id="overview-video">
                 <div class="col-md-8 mx-auto grey-container">
-                    <h4 class="pb-2"><strong>Paper Overview</strong></h4>
+                    <h4 class="pb-2"><strong>Cell types in SegPath</strong></h4>
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VrVsAcgFK_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
