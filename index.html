@@ -126,12 +126,12 @@
                     Overview of SegPath
                 </h1>
             </div>
-            <div class="my-4 pt-4">
+            <div class="my-4 pt-2 mx-5">
                 <div class="mx-auto">
-                    <div class="mb-5">
+                    <div class="mb-4">
                         <span></span><img src="overview.png" class="img-fluid d-block mx-auto">
                     </div>
-                    <p class="text-justify mx-5">
+                    <p class="text-justify">
                         SegPath is created for the semantic segmentation of H&E images
                         for eight major cell types in tumor tissue.
                         <br>
@@ -150,7 +150,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5  mx-5">
+            <div class="mb-4 pt-3  mx-5">
                 <div class="mx-auto">
                     <h4 class="pb-2"><strong>Cell types in SegPath</strong></h4>
                     <p class="text-justify">
@@ -164,7 +164,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5  mx-5">
+            <div class="mb-4 pt-3  mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                         - anti-αSMA (smooth muscle cells/myofibroblasts)
@@ -177,7 +177,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5  mx-5">
+            <div class="mb-4 pt-3  mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                         - anti-CD235a (red blood cells)
@@ -190,7 +190,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5  mx-5">
+            <div class="mb-4 pt-3  mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                         - anti-CD45RB (leukocytes)
@@ -203,7 +203,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5 mx-5">
+            <div class="mb-4 pt-3 mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                          - anti-CD3/CD20 (lymphocytes)
@@ -216,7 +216,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5 mx-5">
+            <div class="mb-4 pt-3 mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                        - anti-ERG (endothelial cells)
@@ -229,7 +229,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5 mx-5">
+            <div class="mb-4 pt-3 mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                        - anti-MIST1 (plasma cells)
@@ -242,7 +242,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5 mx-5">
+            <div class="mb-4 pt-3 mx-5">
                 <div class="mx-auto">
                     <p class="text-justify">
                        - anti-MNDA (myeloid cells)
@@ -255,13 +255,19 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-4 pt-5 mx-5">
+            <div class="mb-2 pt-3 mx-5">
                 <div class="mx-auto">
                     <h4><strong>Dataset organization</strong></h4>
-                    <p class="text-justify" style="word-break: break-all;">
+                    <p class="text-justify">
                       A Tar.gz file contains the following files:<br>
-                      - HE image file: {antigen}_{celltype}_{slideID}_{posx}_{posy}_HE.png<br>
-                      - Mask image file: {antigen}_{celltype}_{slideID}_{posx}_{posy}_mask.png<br>
+                      - HE image file:
+                    <span style="word-break: break-all;">
+                      {antigen}_{celltype}_{slideID}_{posx}_{posy}_HE.png
+                    </span>
+                      - Mask image file:
+                    <span style="word-break: break-all;">
+                      {antigen}_{celltype}_{slideID}_{posx}_{posy}_mask.png
+                    </span>
                       Each image file is 984x984 px.<br>
                       posX and posY are the leftmost position in WSI coordinate.<br>
                       Mask files store binary segmentation mask (background : 0, target : 1)<br>
@@ -273,10 +279,9 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-5 pt-4  mx-5" id="license">
+            <div class="mb-5 pt-2  mx-5" id="license">
                 <div class="mx-auto grey-container mb-5 ">
-                   <h4><strong>Licenses</strong></h4>
-                    <br>
+                    <h4><strong>Licenses</strong></h4>
                     <p class="text-justify">
                       This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (<b>CC-BY-NC-SA 4.0</b>)<br>
                       For non-commercial use, please use the dataset under CC-BY-NC-SA.<br>
