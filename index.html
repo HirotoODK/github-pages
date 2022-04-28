@@ -10,15 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Project Page for AI Choreographer">
+    <meta name="description" content="Overview of SegPath">
     <meta name="author" content="Ruilong">
 
     <meta property="og:image" content="https://google.github.io/aichoreographer/assets/web_preview.png">
     <meta property="og:url" content="https://google.github.io/aichoreographer/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="AI Choreographer: Music Conditioned 3D Dance Generation with AIST++">
-    <meta property="og:video" content="https://www.youtube.com/embed/VrVsAcgFK_4">
-    <meta property="og:description" content="AI Choreographer: Music Conditioned 3D Dance Generation with AIST++.">
+    <meta property="og:title" content="Overview of SegPath">
+    <meta property="og:description" content="Overview of SegPath">
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -121,243 +120,193 @@
                 <h1 class="col-md-12 text-center">
                     Overview of SegPath
                 </h1>
-            </div>
+            </div>        
 
-            <div class="row" id="authors">
-                <div class="mx-auto text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="http://www.liruilong.cn/">Ruilong Li*</a><sup>1,2</sup>
-
-                        <li class="list-inline-item">
-                            <a href="https://shanyang.me">Shan Yang*</a><sup>2</sup>
-
-                        <li class="list-inline-item">
-                            <a href="https://scholar.google.com/citations?user=RqOzJR0AAAAJ&hl=en">David A. Ross</a><sup>2</sup>
-
-                        <li class="list-inline-item">
-                            <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a><sup>2,3</sup>
-                    </ul>
-                    <p id="institution">
-                        <sup>1</sup>University of Southern California &nbsp;&nbsp;&nbsp;&nbsp;
-                        <sup>2</sup>Google Research &nbsp;&nbsp;&nbsp;&nbsp;
-                        <sup>3</sup>UC Berkeley
-                    </p>
-                </div>
-            </div>
-            <div class="row mb-2" id="links">
-                <div class="mx-auto">
-                    <ul class="nav">
-                        <li class="nav-item text-center">
-                            <a href="https://arxiv.org/abs/2101.08779" class="nav-link">
-                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z" />
-                                </svg><br>
-                                Paper
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://google.github.io/aistplusplus_dataset" class="nav-link">
-                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
-                                </svg><br>
-                                Dataset
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://github.com/google/aistplusplus_api" class="nav-link">
-                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                                </svg><br>
-                                Dataset-API
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://github.com/google-research/mint" class="nav-link">
-                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                                </svg><br>
-                                Model
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="row mb-3 pt-2">
                 <div class="col-md-8 mx-auto">
                     <div class="row no-gutters pb-2">
                         <div class="col-5">
-                            <span></span><img src="assets/teaser-dataset.png" class="img-responsive">
-                        </div>
-                        <div class="col-2">
-                            <span></span><img src="assets/teaser-model.png" class="img-responsive">
-                        </div>
-                        <div class="col-5">
-                            <img src="assets/teaser_ani.gif" class="img-responsive">
-                            <div class="gif-label bottom-middle">
-                                <svg viewBox="0 0 50 7" xmlns="http://www.w3.org/2000/svg">
-                                    <text x="5" y="6" font-weight="550">Generated 3D Dance</text>
-                                </svg>
-                            </div>
+                            <span></span><img src="overview.png" class="img-responsive">
                         </div>
                     </div>
                     <p class="text-justify">
-                        SegPath is created for the semantic segmentation of H&E images 
+                        SegPath is created for the semantic segmentation of H&E images
                         for eight major cell types in tumor tissue.
                         <br>
                         <br>
-                        The dataset is constructed by immunofluorescence restaing. 
-                        First, sections were stained with H&E. 
-                        They were then digitized using a slide scanner 
-                        to create whole slide images (WSIs). 
-                        After destaining the H&E-stained sections with alcohol and autoclave processing, 
-                        IF and 4',6-diamidino-2-phenylindole dihydrochloride (DAPI) nuclear staining 
-                        were performed using antibodies that specifically recognized each cell type. 
-                        The slides were then digitized again. 
-                        Multiresolution rigid registration between the H&E and 
-                        IF images was performed to ensure that the haematoxylin component 
+                        The dataset is constructed by immunofluorescence restaing.
+                        First, sections were stained with H&E.
+                        They were then digitized using a slide scanner
+                        to create whole slide images (WSIs).
+                        After destaining the H&E-stained sections with alcohol and autoclave processing,
+                        IF and 4',6-diamidino-2-phenylindole dihydrochloride (DAPI) nuclear staining
+                        were performed using antibodies that specifically recognized each cell type.
+                        The slides were then digitized again.
+                        Multiresolution rigid registration between the H&E and
+                        IF images was performed to ensure that the haematoxylin component
                         in the H&E images and DAPI in the IF images, both recognizing nuclei, had been aligned.
                     </p>
 
                 </div>
             </div>
-            <div class="row mb-4" id="overview-video">
-                <div class="col-md-8 mx-auto grey-container">
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
                     <h4 class="pb-2"><strong>Cell types in SegPath</strong></h4>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VrVsAcgFK_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-8 mx-auto">
-                    <h4><strong>Dance Generation Results</strong></h4>
                     <p class="text-justify">
-                        Here we show sampled dance motions generated using our proposed model. Given a 2 second seed 
-                        motion sequence and a piece of music, our model can generate long-range non-freezing dance motion
-                        following the music rhythm. We demonstrate our generated dance motions using
-                        the avatars from <a href="https://www.mixamo.com/#/" target="_blank">Mixamo</a>.
+                        - anti-panCK (epithelial cells)
                     </p>
-                    <div class="row pt-1 pb-1">
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_1.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_2.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_3.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_4.mp4" type="video/mp4">
-                            </video>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="AE13_1.png" class="img-responsive">
                         </div>
                     </div>
-                    <div class="row pt-1 pb-1">
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_5.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_6.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_7.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_8.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_9.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="col-md-6">
-                            <video class="results" loop="" playsinline="" controls="" width="85%" onloadstart="this.volume=0.1">
-                                <source src="assets/gen_results_10.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-4" id="overview-dataset">
-                <div class="col-md-8 mx-auto grey-container">
-                    <h4 class="pb-2"><strong>AIST++ 3D Dance Motion Dataset</strong></h4>
-                    <div class="row pt-1 pb-1">
-                        <div class="col-12">
-                            <video loop="" playsinline="" controls="" width="85%">
-                                <source src="assets/aist_demo.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <br>
                     <p class="text-justify">
-                        In order to train our model, we introduce AIST++, a large-scale 3D human dance motion dataset, 
-                        which contains a wide variety of 3D motion paired with music
-                        It is built upon the 
-                        <a href="https://aistdancedb.ongaaccel.jp/" target="_blank">AIST Dance Database</a>,
-                        which is an uncalibrated multi-view collection of dance videos.
-                        AIST++ dataset is designed to serve as a benchmark for both 
-                        motion generation and prediction tasks. It can also potentially benefit 
-                        other tasks such as the 2D/3D human pose estimation. To our knowledge, 
-                        AIST++ is the largest 3D human dance dataset with 1408 sequences, 30 subjects 
-                        and 10 dance genres with basic and advanced choreographies. It also covers over 18k seconds motion
-                        data with over 10M corresponding images.
-                        For more info about this dataset, please visit 
-                        <a href="https://google.github.io/aistplusplus_dataset" target="_blank">the dataset website</a>.
+                        <a href="https://zenodo.org/record/6456714" target="_blank">https://zenodo.org/record/6456714</a>.
                     </p>
                 </div>
             </div>
-            <div class="row mb-2">
+            <div class="row mb-3 pt-2">
                 <div class="col-md-8 mx-auto">
-                    <h4 class="mb-3">Bibtex</h4>
-                    <div class="bibtex">@misc{li2021learn,
-      title={AI Choreographer: Music Conditioned 3D Dance Generation with AIST++}, 
-      author={Ruilong Li and Shan Yang and David A. Ross and Angjoo Kanazawa},
-      year={2021},
-      booktitle={ICCV}
-}</div>
+                    <p class="text-justify">
+                        - anti-αSMA (smooth muscle cells/myofibroblasts)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="SMA.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6456722" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
                 </div>
             </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                        - anti-CD235a (red blood cells)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="GLPA.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6451383" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                        - anti-CD45RB (leukocytes)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="CD45_cellpose.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6456712" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                         - anti-CD3/CD20 (lymphocytes)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="CD3_CD20_cellpose.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6456710" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                       - anti-ERG (endothelial cells)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="ERG_cellpose2.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6451375" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                       - anti-MIST1 (plasma cells)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="MIST1_cellpose2.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6342445" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3 pt-2">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-justify">
+                       - anti-MNDA (myeloid cells)
+                    </p>
+                    <div class="row no-gutters pb-2">
+                        <div class="col-5">
+                            <span></span><img src="MNDA_cellpose.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        <a href="https://zenodo.org/record/6451369" target="_blank">https://zenodo.org/record/6456722</a>.
+                    </p>
+                </div>
+            </div>
+
             <div class="row mb-3">
                 <div class="col-md-8 mx-auto">
-                    <h4><strong>More Thanks</strong></h4>
+                    <h4><strong>Dataset organization</strong></h4>
                     <p class="text-justify">
-                        We thank Chen Sun, Austin Myers, Bryan Seybold and Abhijit Kundu for helpful discussions.
-                        We thank Emre Aksan and Jiaman Li for sharing us the baseline code bases.
-                        We also thank Kevin Murphy for the early attempts on this direction, as well as Peggy Chi and Pan Chen 
-                        for the help on user study experiments.
-                        We thank Jordi Pont-Tuset for sharing us the dataset webpage template.
-                        And we thank Shunsuke Saito for letting us know about this amazing dataset.
-                        Besides, we also would like to thank the people who build and release the amazing 
-                        <a href="https://aistdancedb.ongaaccel.jp/" target="_blank">AIST Dance Video Dataset</a>. 
-                        This website is inspired by the template of <a href="https://alexyu.net/pixelnerf/" target="_blank">pixelnerf</a>.
+                      A Tar.gz file contains the following files:<br>
+                      - HE image file: {antigen}_{celltype}_{slideID}_{posx}_{posy}_HE.png<br>
+                      - Mask image file: {antigen}_{celltype}_{slideID}_{posx}_{posy}_mask.png<br>
+                      Each image file is 984x984 px.<br>
+                      posX and posY are the leftmost position in WSI coordinate.<br>
+                      Mask files store binary segmentation mask (background : 0, target : 1)<br>
+                      <br>
+                      A csv file contains the following information:<br>
+                      antigen : Antibodies for this antigen were used to create the segmentation mask.<br>
+                      filename: filename of image or mask file.<br>
+                      train_val_test : train, validation, or test sample in the paper.
                     </p>
                 </div>
             </div>
             <div class="row mb-4" id="license">
                 <div class="col-md-8 mx-auto grey-container">
+                   <h4><strong>Licenses</strong></h4>
                     <br>
                     <p class="text-justify">
-                        Learn To Dance assets are Copyright 2021 Google LLC, licensed under the CC-BY 4.0 license.
+                      This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (<b>CC-BY-NC-SA 4.0</b>)<br>
+                      For non-commercial use, please use the dataset under CC-BY-NC-SA.<br>
+                      If you would like to use the dataset for commercial purposes, please contact us (ishum-prm@m.u-tokyo.ac.jp).
                     </p>
                 </div>
             </div>
-            
+
         </div> <!-- container -->
     </body>
 
